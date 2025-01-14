@@ -1,11 +1,8 @@
-import os
-from jinja2 import Environment,FileSystemLoader
-from django.templatetags.static import static
 from django.urls import reverse
-from django.template.loader import select_template
+from django.templatetags.static import static
+from jinja2 import Environment
 
 def get_environment(**options):
-	
 	env = Environment(
 		**options,
 	)
